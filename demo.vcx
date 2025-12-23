@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 VibeCraft Demo Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard', cursive;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        h1 { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <h1>🚀 Welcome to VibeCraft.js!</h1>
+    <p>This page was generated with AI magic ✨</p>
+    
+    <div class="card">
+        <h2>🎭 A Dramatic Welcome</h2>
+        <AI prompt="Write a dramatic, overly enthusiastic welcome message for a web framework demo page. Make it funny and use 2-3 sentences. Return as a paragraph tag."/>
+    </div>
+    
+    <div class="card">
+        <h2>📜 The Ancient Prophecy</h2>
+        <AI prompt="Write a fake ancient prophecy about HTML and CSS, like it's from an old scroll. Make it mystical and silly. Return as a blockquote with italic text."/>
+    </div>
+    
+    <div class="card">
+        <h2>🍕 Today's Special Features</h2>
+        <AI prompt="Generate a funny unordered list of 4 fake features for an AI web framework. Be absurd. Examples: 'Quantum CSS', 'Blockchain-based divs'. Return as a ul with li items."/>
+    </div>
+    
+    <div class="card">
+        <h2>⚠️ Important Warning</h2>
+        <AI prompt="Write a fake but hilarious disclaimer/warning about using AI to generate websites. Make it sound like a medication commercial side effects warning. Return in a div with red-ish background color."/>
+    </div>
+    
+    <div class="card">
+        <h2>🎵 A Haiku for Developers</h2>
+        <AI prompt="Write a haiku about debugging at 3am. Format it nicely with line breaks in a pre tag with centered text."/>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; opacity: 0.7;">
+        <p>Built with 🌈 VibeCraft.js - Where HTML meets chaos</p>
+    </footer>
+</body>
+</html>
