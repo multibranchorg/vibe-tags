@@ -1,0 +1,72 @@
+{
+  "name": "vibecraft-enterprise-ready",
+  "version": "0.420.69",
+  "private": true,
+  "description": "VibeCraft.js, now enterprise-ready to an unreasonable degree.",
+  "license": "WTFPL",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node vibecraft.js demo.vcx",
+    "build": "npm run build:webpack && npm run build:rollup && npm run build:vite && npm run build:esbuild",
+    "build:webpack": "webpack --config build/webpack.config.js",
+    "build:rollup": "rollup -c build/rollup.config.mjs",
+    "build:vite": "vite build --config build/vite.config.ts",
+    "build:esbuild": "node build/esbuild.config.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx,js}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,yml,yaml}\"",
+    "validate": "npm run typecheck && npm run lint",
+    "security:scan": "npm audit --audit-level=moderate",
+    "compliance:pii": "node scripts/pii-scan.js",
+    "compliance:iso": "node scripts/iso-27001-readiness.js",
+    "test": "node scripts/enterprise-placeholder-tests.js",
+    "changeset": "changeset",
+    "release": "changeset version && changeset publish",
+    "commitlint": "commitlint --from=HEAD~1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-typescript": "^7.25.0",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.3.0",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "babel-loader": "^9.1.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-security": "^1.7.1",
+    "esbuild": "^0.24.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "rollup": "^4.27.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^6.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
