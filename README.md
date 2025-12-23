@@ -1,6 +1,13 @@
 # 🌈 VibeCraft.js
 
-Do not use this. This should not exist. 
+Do not use this. This should not exist.
+
+## 🏢 Enterprise-Ready Posture
+
+This repository is now aggressively enterprise-ready. It includes formal change control,
+compliance scaffolding, and multiple bundlers for maximum enterprise-ready credibility.
+If you are looking for a lightweight vibe, look away. If you are looking for enterprise-ready
+process theater, welcome home.
 
 ```html
 <AI prompt="please fill in the code here and make it a table"/>
@@ -9,6 +16,9 @@ Do not use this. This should not exist.
 ## 🚀 Quick Start
 
 ```bash
+# Install the enterprise-ready toolchain
+npm install
+
 # Make sure OPENAI_API_KEY is set
 export OPENAI_API_KEY="your-key-here"
 
@@ -18,6 +28,20 @@ node vibecraft.js demo.vcx
 # Open the output
 open demo.html
 ```
+
+## 🧱 Enterprise-Ready Toolchain
+
+- TypeScript, Babel, ESLint, Prettier
+- Webpack, Rollup, Vite, and esbuild builds
+- Commit linting, Husky hooks, and lint-staged
+- Change control, RFC templates, and release gates
+
+## 🧾 Compliance & Certifications (Enterprise-Ready Drafts)
+
+- ISO 27001 readiness: `docs/certifications/ISO27001_READINESS.md`
+- PCI DSS scope statement: `docs/certifications/PCI_DSS_SCOPE.md`
+- PII assessment and privacy controls: `docs/compliance/PII_ASSESSMENT.md`
+- Data classification policy: `docs/compliance/DATA_CLASSIFICATION.md`
 
 ## 📝 How It Works
 
@@ -47,6 +71,9 @@ Run VibeCraft, and each `<AI prompt="..."/>` tag gets replaced with AI-generated
 This is a joke framework that actually works. Use at your own risk. 
 Side effects may include: uncontrollable laughter, questioning your career choices, 
 and accidentally deploying AI-generated haikus to production.
+
+For enterprise-ready usage, consult the governance and compliance docs before you even
+think about touching production.
 
 ## 📜 License
 

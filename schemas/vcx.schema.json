@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VibeCraft Enterprise VCX",
+  "type": "object",
+  "properties": {
+    "enterpriseReady": { "const": true },
+    "aiTags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prompt": { "type": "string", "minLength": 1 },
+          "riskTier": { "type": "string", "enum": ["low", "moderate", "high"] }
+        },
+        "required": ["prompt", "riskTier"]
+      }
+    },
+    "changeTicket": { "type": "string" },
+    "piiDisclosure": { "type": "string" }
+  },
+  "required": ["enterpriseReady", "changeTicket"]
+}
